@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Sayfa dışı (External) CSS ekleme...
+        HTML dosyasına css dosyaları eklenerek kullanılır. 
+    -->
+    <link rel="stylesheet" href="ornek.css">
+    <title>Document</title>
+     <!--
+        Sayfa içi (İnternal) CSS ekleme...
+        HTML dosyasında style etiketi kullanarak eklenir. 
+    -->
+    <style>
+        h2{
+            color: blueviolet;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Satır İçi (İnline) CSS ekleme...
+        HTML etiketlerinin style özelliği kullanarak eklenir. 
+    -->
+    <h1 style="color: blue;">1. Seviye Başlık</h1>
+    <h2 style="color: blue;">2. Seviye Başlık</h2><!--Sonradan yazılan öncekini ezer-->
+    <h2>2. Seviye Başlık</h2>
+    <h3>3. Seviye Başlık</h3>
+
+</body>
+</html>
