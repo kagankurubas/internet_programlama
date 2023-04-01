@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>autofocus</li>
+        <li>placeholder</li>
+        <li>required</li>
+        <li>hidden</li>
+    </ul>
+    <form novalidate>
+        <fieldset>
+            <Legend>HTML Formları Öğrenme Örneği</Legend>
+            Telefon No <input type="text" name="ad" placeholder="0555 555 55 55" > <br>
+            Seçili Gelen Adınız <input type="text" name="ad" value="Tegan the Bard" autofocus> <br>
+            Doldurulması Zorunlu Alan <input type="text" name="ad" value="Tegan the Bard" required> <br>
+            <hr>
+            <input type="hidden" value="66">
+        <input type="submit" value="Gönder"> 
+        <input type="reset" value="Temizle">
+        </fieldset>
+    </form>
+    <script>
+        let aralik=document.getElementById("aralik")
+        let aralik_deger=document.getElementById("aralik_deger")
+        aralik.addEventListener("input",function(){
+                aralik_deger.innerHTML = aralik.value;
+            })
+    </script>
+</body>
+</html>
