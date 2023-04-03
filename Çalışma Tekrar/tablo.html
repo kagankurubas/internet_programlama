@@ -9,63 +9,67 @@
         table{
             width: 100%;
         }
-        table,th,td,tr{
+        table,tr,td{
+            font-family: Arial, Helvetica, sans-serif;
             border: 2px solid black;
             border-collapse: collapse;
-            font-family: Arial, Helvetica, sans-serif;
         }
-        #ilk_head_satir{
-            background-color: #1D65A6;
+        #baslik1{
             color: white;
+            background-color: #1D65A6;
             text-align: center;
         }
-        #ikinci_head_satir{
-            background-color: #00743F;
+        #baslik2{
             color: white;
+            background-color: #00743F;
             text-align: left;
         }
-        #ucuncu_head_satir{
-            background-color: #72A2C0;
+        #baslik3{
             color: white;
+            background-color: #72A2C0;
             text-align: center;
         }
-        #dorduncu_head_satir{
+        #baslik4{
             color: white;
             background-color: #F2A104;
+            text-align: center;
         }
-        tbody tr:nth-child(odd){
+        tbody:nth-child(even){
             background-color: #ebf2ea;
+            color: black;
+            text-align: center;
         }
-        tbody tr:nth-child(even){
+        tbody:nth-child(odd){
             background-color: #f5fdba;
+            color: black;
+            text-align: center;
         }
-
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <tr id="ilk_head_satir">
+            <tr id="baslik1">
                 <td colspan="9" rowspan="3">GÜNLÜK TAKİP ÇİZELGESİ</td>
             </tr>
             <tr></tr>
             <tr></tr>
-            <tr id="ikinci_head_satir">
+            <tr id="baslik2">
                 <td colspan="3">Görevli Öğrenci</td>
-                <td colspan="4">Tarih 01/04/2023</td>
+                <td colspan="4">Tarih 03/04/2023</td>
                 <td>Sayfa No:</td>
-                <td>İmza:</td>
+                <td>İmza</td>
             </tr>
-            <tr id="ucuncu_head_satir">
+            <tr id="baslik3">
                 <td rowspan="2">Sıra No</td>
-                <td style="text-align: right;" colspan="2" rowspan="2">Verilen Malzeme Adı/Cinsi</td>
+                <td style="text-align:end;" rowspan="2" colspan="2">Verilen Malzeme Adı/Cinsi</td>
                 <td colspan="2">Öğrenci</td>
                 <td colspan="2">Öğleden</td>
                 <td rowspan="2">Getirdi</td>
-                <td style="text-align: left;" rowspan="2">Düşünceler</td>
+                <td rowspan="2" style="text-align: left;">Düşünceler</td>
             </tr>
-            <tr id="dorduncu_head_satir">
-                <td>Not</td>
+            <tr id="baslik4">
+                <td>No</td>
                 <td>Sınıf</td>
                 <td>Önce</td>
                 <td>Sonra</td>
@@ -74,6 +78,7 @@
         <tbody>
             <tr>
                 <td>1</td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -126,8 +131,10 @@
                 <td></td>
                 <td></td>
             </tr>
+
         </tbody>
+        
     </table>
-    
+   
 </body>
 </html>
